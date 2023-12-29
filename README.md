@@ -4,7 +4,7 @@
  Email: mahbub.ul.alam.anondo@gmail.com
 
 ## Overview
-This repository documents the training and evaluation of named entity recognition (NER) models using the English subset of the [**MultiNERD**](https://huggingface.co/datasets/Babelscape/multinerd) dataset. The dataset includes 10 languages and 15 NER categories, with a focus on Wikipedia and WikiNews texts. The project centers around fine-tuning the "bert-base-multilingual-cased" BERT-based language model with the English portion of the [**MultiNERD**](https://huggingface.co/datasets/Babelscape/multinerd) dataset.
+This repository documents the training and evaluation of named entity recognition (NER) models using the English subset of the [**MultiNERD**](https://huggingface.co/datasets/Babelscape/multinerd) dataset. The dataset includes 10 languages and 15 NER categories, with a focus on Wikipedia and WikiNews texts. The project centers around fine-tuning the [**"bert-base-multilingual-cased"**](https://huggingface.co/bert-base-multilingual-cased) BERT-based language model with the English portion of the [**MultiNERD**](https://huggingface.co/datasets/Babelscape/multinerd) dataset.
 
 ## System Implementation
 ### System A
@@ -17,7 +17,7 @@ This repository documents the training and evaluation of named entity recognitio
 - **Adjustments**: Excludes other entity types and alters label IDs for consistency.
 
 ## Evaluation and Analysis
-- **Tools**: Utilizes seqeval and nervaluate frameworks for evaluation.
+- **Tools**: Utilizes [**"seqeval"**](https://github.com/chakki-works/seqeval) and [**"nervaluate"**](https://github.com/MantisAI/nervaluate) frameworks for evaluation.
 - **Approach**: Conducts a thorough evaluation using various metrics, including F1, Recall, Precision, and detailed error categorization.
 - **Findings**: The results demonstrate satisfactory performance, with insights into the impact of entity type quantity and the comparison between cased and uncased models.
 
@@ -26,7 +26,7 @@ This repository documents the training and evaluation of named entity recognitio
 - **Future Directions**: Aims to overcome these challenges and focus on the real-world applicability and efficacy of models. Future evaluations will employ methodologies from "Interpretable Multi-dataset Evaluation for Named Entity Recognition" ([Read the paper](https://aclanthology.org/2020.emnlp-main.489.pdf)) and its [GitHub Repository](https://github.com/neulab/InterpretEval).
 
 ## Additional Experiments
-- **Uncased Model Trials**: Conducted experiments with 'bert-base-multilingual-uncased' model, yielding results that highlight the need for more extensive hyperparameter tuning.
+- **Uncased Model Trials**: Conducted experiments with [**"bert-base-multilingual-uncased"**](https://huggingface.co/bert-base-multilingual-uncased) model, yielding results that highlight the need for more extensive hyperparameter tuning.
 
 ## Repository Contents
 - **Models and Results**: All trained models and their results are accessible at https://drive.google.com/drive/folders/1T0LyFGaHQctgBLVnZUHNpvLzhcvOWjMt
@@ -34,7 +34,7 @@ This repository documents the training and evaluation of named entity recognitio
 
 ## User Guide
 - **Setup**: Refer to `requirements.txt` for environment setup.
-- **Dataset Preparation**: Assumes the MultiNERD dataset has been pre-downloaded. Instructions for downloading and using git-lfs are included in the IPython Notebook.
+- **Dataset Preparation**: Assumes the MultiNERD dataset has been pre-downloaded. Instructions for downloading are included in the IPython Notebook.
 - **Google Colab Information**: For users on Google Colab with an A100 GPU, Google Drive access is required to save information.
 
 This repository is open for contributions, suggestions, and discussions to enhance the models and evaluation methods. For a comprehensive understanding of the methodologies, results, and future plans, please explore the IPython Notebook.
