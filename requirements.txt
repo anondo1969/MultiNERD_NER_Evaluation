@@ -1,0 +1,9 @@
+
+datasets==2.16.0
+git+https://github.com/MartinKondor/jsonl.git
+nervaluate==0.1.8
+plotly==5.9.0
+protobuf==3.20.1
+span_marker==1.5.0
+transformers==4.26.1
+pandas==1.4.2
