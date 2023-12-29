@@ -4,16 +4,16 @@
  Email: mahbub.ul.alam.anondo@gmail.com
 
 ## Overview
-This repository documents the training and evaluation of named entity recognition (NER) models using the English subset of the MultiNERD dataset. The dataset includes 10 languages and 15 NER categories, with a focus on Wikipedia and WikiNews texts. The project centers around fine-tuning the "bert-base-multilingual-cased" BERT-based language model with the English portion of the MultiNERD dataset.
+This repository documents the training and evaluation of named entity recognition (NER) models using the English subset of the [**MultiNERD**](https://huggingface.co/datasets/Babelscape/multinerd) dataset. The dataset includes 10 languages and 15 NER categories, with a focus on Wikipedia and WikiNews texts. The project centers around fine-tuning the "bert-base-multilingual-cased" BERT-based language model with the English portion of the [**MultiNERD**](https://huggingface.co/datasets/Babelscape/multinerd) dataset.
 
 ## System Implementation
 ### System A
-- **Dataset**: Uses the English subset of the MultiNERD dataset.
-- **Framework**: Training conducted with the SpanMarker Python framework, which processes sentences through a pretrained encoder (such as BERT or RoBERTa) and fine-tunes it using cross-entropy loss. The model employs special tokens to indicate the start and end of a span in the input sentence.
+- **Dataset**: Uses the English subset of the [**MultiNERD**](https://huggingface.co/datasets/Babelscape/multinerd) dataset.
+- **Framework**: Training conducted with the [**SpanMarker**](https://github.com/tomaarsen/SpanMarkerNER/) Python framework, which processes sentences through a pretrained encoder (such as BERT or RoBERTa) and fine-tunes it using cross-entropy loss. The model employs special tokens to indicate the start and end of a span in the input sentence.
 
 ### System B
-- **Dataset**: Mirrors System A, focusing on five entity types: PERSON, ORGANIZATION, LOCATION, DISEASES, ANIMAL.
-- **Framework**: Adopts the same SpanMarker Python framework as System A.
+- **Dataset**: Mirrors System A, except limiting on five entity types: PERSON, ORGANIZATION, LOCATION, DISEASES, ANIMAL.
+- **Framework**: Adopts the same [**SpanMarker**](https://github.com/tomaarsen/SpanMarkerNER/) Python framework as System A.
 - **Adjustments**: Excludes other entity types and alters label IDs for consistency.
 
 ## Evaluation and Analysis
@@ -29,7 +29,7 @@ This repository documents the training and evaluation of named entity recognitio
 - **Uncased Model Trials**: Conducted experiments with 'bert-base-multilingual-uncased' model, yielding results that highlight the need for more extensive hyperparameter tuning.
 
 ## Repository Contents
-- **Models and Results**: All trained models and their results are accessible at [GitHub Repository - neulab/InterpretEval](https://github.com/neulab/InterpretEval).
+- **Models and Results**: All trained models and their results are accessible at https://drive.google.com/drive/folders/1T0LyFGaHQctgBLVnZUHNpvLzhcvOWjMt
 - **IPython Notebook**: Includes a well-commented and descriptive IPython notebook for detailed understanding and replication of the experiments.
 
 ## User Guide
